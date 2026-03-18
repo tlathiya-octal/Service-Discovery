@@ -1,0 +1,16 @@
+server:
+  port: 8761
+
+spring:
+  application:
+    name: service-discovery
+
+eureka:
+  client:
+    registryFetchIntervalSeconds: 10 # time betweent 
+    leaseRenewalIntervalInSeconds: 10 # heartbeat interval
+    registerWithEureka: false
+    fetchRegistry: false
+  instance:
+    leaseExpirationDurationInSeconds: 30
+    leaseRenewalIntervalInSeconds: 10
